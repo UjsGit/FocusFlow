@@ -1,0 +1,25 @@
+/* --- LAYER 1: MAIN FOCUS (Progress Bar) --- */
+/* Target by ARIA and standard classes for maximum resilience */
+body.ff-active div[role="slider"][aria-label*="Seek"], 
+body.ff-active .ytp-progress-bar-container,
+body.ff-active .ytp-time-display,
+body.ff-active .ytp-videowall-still-info-duration {
+    display: none !important;
+}
+
+/* --- LAYER 2: SIDEBAR SHIELD --- */
+body.ff-hide-sidebar #secondary,
+body.ff-hide-sidebar ytd-live-chat-frame {
+    display: none !important;
+}
+body.ff-hide-sidebar #primary {
+    max-width: 100% !important;
+    padding-right: 0 !important;
+    margin: 0 auto !important;
+}
+
+/* --- LAYER 3: COMMENTS SHIELD --- */
+body.ff-hide-comments #comments,
+body.ff-hide-comments ytd-comments {
+    display: none !important;
+}
