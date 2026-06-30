@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
   "name": "FocusFlow: Hide Progress Bar",
-  "description": "Stop clock-watching. Hides the YouTube progress bar, sidebar, and comments (depending what you choose) to help you stay in the flow state.",
+  "description": "Stop clock-watching. Hides the YouTube progress bar, sidebar, and comments to help you stay in the flow state.",
   "version": "1.0",
   "permissions": [
-    "storage", 
-    "activeTab", 
+    "storage",
+    "activeTab",
     "scripting"
   ],
   "icons": {

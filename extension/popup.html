@@ -3,107 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        body { width: 320px; background: #0f0f0f; color: white; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 16px; }
+        body {
+            width: 320px;
+            background: #0f0f0f;
+            color: white;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 16px;
+        }
+
+        /* ── Header ── */
         .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
         .header h2 { font-size: 18px; margin: 0; color: #3ea6ff; font-weight: 600; }
         .header-icons { display: flex; gap: 15px; fill: #aaa; }
-        .icon-btn { cursor: pointer; width: 20px; height: 20px; transition: 0.2s; }
+        .icon-btn { cursor: pointer; width: 20px; height: 20px; transition: fill 0.2s; }
         .icon-btn:hover { fill: white; }
 
-        /* Usage Guide Overlay */
-        #guide { 
-    display: none; 
-    background: #1e1e1e; 
-    padding: 12px; 
-    border-radius: 10px; 
-    font-size: 12px; 
-    margin-bottom: 15px; 
-    line-height: 1.5; 
-    border: 1px solid #333;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-}
+        /* ── Help Guide ── */
+        #guide {
+            display: none;
+            background: #1e1e1e;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 12px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            border: 1px solid #333;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
 
+        /* ── Main Toggle ── */
         .main-toggle-area { text-align: center; margin-bottom: 24px; }
         .status-text { font-weight: bold; font-size: 20px; margin-top: 12px; }
         .sub-status { font-size: 13px; color: #3ea6ff; margin-top: 4px; }
-        #statusLabel {
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    transition: color 0.5s ease-in-out; /* Smooth color shifting */
-}
-        
-        /* The "Safe & Sound" Status Label */
         #statusLabel {
             font-weight: 700;
             letter-spacing: 0.5px;
             transition: color 0.4s ease;
         }
 
-        /* The Card */
-        .focus-card { background: #1e1e1e; border-radius: 12px; padding: 16px; display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+        /* ── Focus Card ── */
+        .focus-card {
+            background: #1e1e1e;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
         .card-circle { position: relative; width: 54px; height: 54px; flex-shrink: 0; }
-        .card-circle span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 11px; font-weight: bold; }
-        
+        .card-circle span {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 11px;
+            font-weight: bold;
+        }
         .card-info { flex-grow: 1; overflow: hidden; }
         .card-label { font-size: 10px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
-        .video-title { font-size: 13px; font-weight: 500; margin: 4px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+        .video-title {
+            font-size: 13px;
+            font-weight: 500;
+            margin: 4px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+        }
         .time-left { font-size: 13px; color: #ff8989; font-weight: 500; }
 
-        /* Styled Switch */
+        /* ── Toggle Switch ── */
         .switch { position: relative; display: inline-block; width: 44px; height: 22px; }
         .switch input { opacity: 0; width: 0; height: 0; }
-        .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #333; transition: .3s; border-radius: 34px; }
-        .slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 3px; bottom: 3px; background-color: white; transition: .3s; border-radius: 50%; }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: #333;
+            transition: .3s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px; width: 16px;
+            left: 3px; bottom: 3px;
+            background-color: white;
+            transition: .3s;
+            border-radius: 50%;
+        }
         input:checked + .slider { background-color: #3ea6ff; }
         input:checked + .slider:before { transform: translateX(22px); }
 
-        .footer { text-align: center; margin-top: 15px; font-size: 12px; color: #666; cursor: pointer; }
+        /* ── Distraction Shields ── */
+        .shields-card {
+            background: #1e1e1e;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 16px;
+            border: 1px solid #333;
+        }
+        .shields-title {
+            font-size: 11px;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        .shield-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .shield-row:last-child { margin-bottom: 0; }
+        .shield-row span { font-size: 14px; }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 12px;
+            color: #444;
+            cursor: default;
+            opacity: 0.6;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <div class="header">
         <div style="display: flex; align-items: center; gap: 8px;">
             <img src="icon.png" style="width: 24px; height: 24px; border-radius: 4px;">
             <h2>FocusFlow</h2>
         </div>
         <div class="header-icons">
-            <svg id="helpBtn" class="icon-btn" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+            <svg id="helpBtn" class="icon-btn" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+            </svg>
         </div>
     </div>
 
-    <!-- Help Guide updated for 5-Peek Rule -->
+    <!-- Help Guide -->
     <div id="guide">
-    <div style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #333;">
-        <strong style="color: #3ea6ff;">Quick Start:</strong><br>
-        1. Turn on <b>Focus Mode</b> to hide the progress bar.<br>
-        2. Open this popup to see your current progress.<br>
-        3. Use <b>Shields</b> to hide the sidebar or comments.
+        <div style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #333;">
+            <strong style="color: #3ea6ff;">Quick Start:</strong><br>
+            1. Turn on <b>Focus Mode</b> to hide the progress bar.<br>
+            2. Open this popup to see your current progress.<br>
+            3. Use <b>Shields</b> to hide the sidebar or comments.
+        </div>
+        <div>
+            <strong style="color: #3ea6ff;">Focus Spectrum:</strong><br>
+            • 0–5: <span style="color: #3ea6ff;">Elite</span> (Flow state)<br>
+            • 6–10: <span style="color: #2ba640;">Steady</span> (Engaged)<br>
+            • 11–15: <span style="color: #ffcc00;">Curious</span> (Anticipating)<br>
+            • 16–20: <span style="color: #ff8c00;">Challenge</span> (Testing stamina)<br>
+            • 21+: <span style="color: #ff8989;">Restless</span> (Time to reset!)
+        </div>
     </div>
-    
-    <div>
-        <strong style="color: #3ea6ff;">Focus Spectrum:</strong><br>
-        • 0-5: <span style="color: #3ea6ff;">Elite</span> (Flow state)<br>
-        • 6-10: <span style="color: #2ba640;">Steady</span> (Engaged)<br>
-        • 11-15: <span style="color: #ffcc00;">Curious</span> (Anticipating)<br>
-        • 16-20: <span style="color: #ff8c00;">Challenge</span> (Testing stamina)<br>
-        • 21+: <span style="color: #ff8989;">Restless</span> (Time to reset!)
-    </div>
-</div>
 
+    <!-- Main Toggle -->
     <div class="main-toggle-area">
         <label class="switch">
             <input type="checkbox" id="mainToggle">
             <span class="slider"></span>
         </label>
         <div class="status-text">Focus Mode</div>
-        <div class="sub-status" id="statusLabel">Focus Score: Strong (0 peeks)</div>
+        <div class="sub-status">
+            <span id="statusLabel">Focus Score: Elite Focus (0 peeks)</span>
+        </div>
     </div>
 
+    <!-- Video Progress Card -->
     <div class="focus-card">
         <div class="card-circle">
             <svg width="54" height="54" style="transform: rotate(-90deg)">
                 <circle cx="27" cy="27" r="24" fill="none" stroke="#333" stroke-width="4"/>
-                <circle id="popupCircle" cx="27" cy="27" r="24" fill="none" stroke="#ff8989" stroke-width="4" stroke-dasharray="150.8" stroke-dashoffset="150.8" stroke-linecap="round"/>
+                <circle id="popupCircle" cx="27" cy="27" r="24" fill="none"
+                    stroke="#ff8989" stroke-width="4"
+                    stroke-dasharray="150.8" stroke-dashoffset="150.8"
+                    stroke-linecap="round"/>
             </svg>
             <span id="popupPercent">0%</span>
         </div>
@@ -115,19 +196,17 @@
     </div>
 
     <!-- Distraction Shields -->
-    <div style="background: #1e1e1e; border-radius: 12px; padding: 15px; margin-bottom: 16px; border: 1px solid #333;">
-        <div style="font-size: 11px; color: #888; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 1px;">Distraction Shields</div>
-        
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-            <span style="font-size: 14px;">Hide Sidebar</span>
+    <div class="shields-card">
+        <div class="shields-title">Distraction Shields</div>
+        <div class="shield-row">
+            <span>Hide Sidebar</span>
             <label class="switch">
                 <input type="checkbox" id="sidebarToggle">
                 <span class="slider"></span>
             </label>
         </div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <span style="font-size: 14px;">Hide Comments</span>
+        <div class="shield-row">
+            <span>Hide Comments</span>
             <label class="switch">
                 <input type="checkbox" id="commentsToggle">
                 <span class="slider"></span>
@@ -135,8 +214,8 @@
         </div>
     </div>
 
-    <!-- Change your footer to this -->
-<div class="footer" style="cursor: default; opacity: 0.6;">Full Statistics (Coming Soon) →</div>
+    <!-- Footer -->
+    <div class="footer">Full Statistics (Coming Soon) →</div>
 
     <script src="popup.js"></script>
 </body>
