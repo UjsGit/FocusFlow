@@ -15,12 +15,12 @@ It primarily hides the YouTube progress bar and time display to help you stay fo
     <td width="50%" align="center">
       <img width="100%" alt="FocusFlow Zen Mode screenshot" src="https://github.com/user-attachments/assets/f9c8b7c4-b14a-4d44-9993-94e1b82ba10d" />
       <br>
-      <sub><b>Left:</b> <b>Zen Mode</b> in action—no red bar, no distractions.</sub>
+      <sub><b></b> <b>Zen Mode</b> in action—no red bar, no distractions.</sub>
     </td>
     <td width="50%" align="center">
       <img width="100%" alt="FocusFlow Snapshot screenshot" src="https://github.com/user-attachments/assets/63d24a50-7ac1-40db-a1af-24abe77d43f0" />
       <br>
-      <sub><b>Right:</b> The <b>Focus Snapshot</b> showing Elite Focus status.</sub>
+      <sub><b></b> The <b>Focus Snapshot</b> showing Elite Focus status.</sub>
     </td>
   </tr>
 </table>
