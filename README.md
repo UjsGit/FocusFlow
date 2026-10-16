@@ -1,34 +1,30 @@
 # FocusFlow
 
+![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-FocusFlow-blue?logo=google-chrome&logoColor=white)
+
 FocusFlow is a lightweight Chrome extension that helps you stay focused while watching YouTube.
 
 It hides distracting elements such as the video progress bar, sidebar, and comments so you can concentrate on the content instead of constantly checking how much time is left.
 
-## Features
+<img width="440" height="280" alt="resized-image" src="https://github.com/user-attachments/assets/7c24ba07-19d8-48ff-8cfe-b71b58a994a5" />
 
-- Hide the YouTube progress bar and time display
-- Hide the recommended videos sidebar
-- Hide the comments section
-- Enable or disable each distraction shield independently
-- View your current video progress from the extension popup
-- Display the current video title and remaining time
-- Track local focus statistics and peek counts
-- Focus score system with five focus levels
-- Help guide built into the extension popup
-- No analytics, advertisements, or external tracking
-- Stores data locally in your browser
+<img width="1280" height="800" alt="ss5" src="https://github.com/user-attachments/assets/f9c8b7c4-b14a-4d44-9993-94e1b82ba10d" />
+<img width="640" height="400" alt="ss3" src="https://github.com/user-attachments/assets/63d24a50-7ac1-40db-a1af-24abe77d43f0" />
 
-## Focus Score
 
-FocusFlow uses a simple five-level focus score based on the number of recorded peeks:
 
-| Peeks | Focus Level |
-| --- | --- |
-| 0–5 | Elite Focus |
-| 6–10 | Steady Progress |
-| 11–15 | Curious Learner |
-| 16–20 | Focus Challenge |
-| 21+ | Restless Mind |
+## 🚀 Key Features
+- **Zen Mode:** Automatically strips away the red progress bar and timestamp.
+- **Distraction Shields:** Independent toggles to hide the **Sidebar** (Suggested Videos) and **Comments** section.
+- **Smart Snapshots:** Check your progress only when you mean to. View video title, percentage, and time remaining inside a clean, circular UI.
+- **Focus Spectrum:** simple five-level focus score based on the number of recorded peeks:
+  -  **0-5 Peeks:** Elite Focus (Flow State)
+  -  **6-10 Peeks:** Steady Progress
+  -  **11-15 Peeks:** Curious Learner
+  -  **16-20 Peeks:** Focus Challenge
+  -  **21+ Peeks:** Restless Mind (Time to reset!)
+
+
 
 The score is designed to encourage intentional viewing and reduce the habit of repeatedly checking the video timeline.
 
