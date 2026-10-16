@@ -4,7 +4,7 @@
 
 FocusFlow is a lightweight Chrome extension that helps you stay focused while watching YouTube.
 
-It hides distracting elements such as the video progress bar, sidebar, and comments so you can concentrate on the content instead of constantly checking how much time is left.
+It primarily hides the YouTube progress bar and time display to help you stay focused. You can also choose whether to hide the sidebar and comments using separate optional settings.
 
 <p align="center">
   <img width="440" alt="FocusFlow logo" src="https://github.com/user-attachments/assets/7c24ba07-19d8-48ff-8cfe-b71b58a994a5" />
