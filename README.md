@@ -1,22 +1,26 @@
 # FocusFlow
 
+<p align="center">
+  <img width="220" alt="FocusFlow logo" src="https://github.com/user-attachments/assets/7c24ba07-19d8-48ff-8cfe-b71b58a994a5" />
+</p>
+
 ![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-FocusFlow-blue?logo=google-chrome&logoColor=white)
 
 FocusFlow is a lightweight Chrome extension that helps you stay focused while watching YouTube.
 
 It primarily hides the YouTube progress bar and time display to help you stay focused. You can also choose whether to hide the sidebar and comments using separate optional settings.
 
-<p align="center">
-  <img width="440" alt="FocusFlow logo" src="https://github.com/user-attachments/assets/7c24ba07-19d8-48ff-8cfe-b71b58a994a5" />
-</p>
-
 <table>
   <tr>
     <td width="50%" align="center">
-      <img width="100%" alt="FocusFlow screenshot 1" src="https://github.com/user-attachments/assets/f9c8b7c4-b14a-4d44-9993-94e1b82ba10d" />
+      <img width="100%" alt="FocusFlow Zen Mode screenshot" src="https://github.com/user-attachments/assets/f9c8b7c4-b14a-4d44-9993-94e1b82ba10d" />
+      <br>
+      <sub><b>Left:</b> <b>Zen Mode</b> in action—no red bar, no distractions.</sub>
     </td>
     <td width="50%" align="center">
-      <img width="100%" alt="FocusFlow screenshot 2" src="https://github.com/user-attachments/assets/63d24a50-7ac1-40db-a1af-24abe77d43f0" />
+      <img width="100%" alt="FocusFlow Snapshot screenshot" src="https://github.com/user-attachments/assets/63d24a50-7ac1-40db-a1af-24abe77d43f0" />
+      <br>
+      <sub><b>Right:</b> The <b>Focus Snapshot</b> showing Elite Focus status.</sub>
     </td>
   </tr>
 </table>
