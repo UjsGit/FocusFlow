@@ -6,10 +6,20 @@ FocusFlow is a lightweight Chrome extension that helps you stay focused while wa
 
 It hides distracting elements such as the video progress bar, sidebar, and comments so you can concentrate on the content instead of constantly checking how much time is left.
 
-<img width="440" height="280" alt="resized-image" src="https://github.com/user-attachments/assets/7c24ba07-19d8-48ff-8cfe-b71b58a994a5" />
+<p align="center">
+  <img width="440" alt="FocusFlow logo" src="https://github.com/user-attachments/assets/7c24ba07-19d8-48ff-8cfe-b71b58a994a5" />
+</p>
 
-<img width="1280" height="800" alt="ss5" src="https://github.com/user-attachments/assets/f9c8b7c4-b14a-4d44-9993-94e1b82ba10d" />
-<img width="640" height="400" alt="ss3" src="https://github.com/user-attachments/assets/63d24a50-7ac1-40db-a1af-24abe77d43f0" />
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img width="100%" alt="FocusFlow screenshot 1" src="https://github.com/user-attachments/assets/f9c8b7c4-b14a-4d44-9993-94e1b82ba10d" />
+    </td>
+    <td width="50%" align="center">
+      <img width="100%" alt="FocusFlow screenshot 2" src="https://github.com/user-attachments/assets/63d24a50-7ac1-40db-a1af-24abe77d43f0" />
+    </td>
+  </tr>
+</table>
 
 
 
@@ -159,4 +169,3 @@ If you find an issue:
 2. Describe the problem clearly.
 3. Include your browser version and the affected YouTube page.
 4. Add steps to reproduce the issue whenever possible.
-
